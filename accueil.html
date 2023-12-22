@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accueil.css">
+    <title>Mille&1nuits</title>
+</head>
+<body>
+    <nav>
+        <a href="lejeu.html" class="logo"><img src="img/mlle1nts.jpg" alt=""></a>
+        <a href="accueil.html">Accueil</a>
+        <a href="boite.html">La Boite</a>
+        <div class="dropdown">
+            <button class="dropbtn">Le Jeu
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">DISCORD</a>
+                <a href="#">Mille&1nuits</a>
+                <a href="#">twitch</a>
+            </div>
+        </div>
+        <a href="/echange/echange.html">échange</a>
+    </nav>
+    <h1>Page d'Accueil</h1>
+    <ul class="lightrope">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div id="loginForm">
+        <form onsubmit="authenticate(event)">
+            <label for="username">Pseudo :</label>
+            <input type="text" id="username" required>
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" required>
+            <input type="checkbox" onclick="togglePasswordVisibility()"> Afficher le mot de passe
+            <br>
+            <button type="submit">Connexion</button>
+        </form>
+        <div id="errorMessage"></div>
+        <a href="echange.html">code d'indice</a>
+    </div>
+    <script src="accueil.js"></script>
+</body>
+</html>
+

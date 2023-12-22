@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Page Cadeau</title>
+</head>
+
+<body>
+    <nav>
+        <a href="lejeu.html" class="logo"><img src="img/mlle1nts.jpg" alt=""></a>
+        <a href="accueil.html">Accueil</a>
+        <a href="boite.html">La Boite</a>
+        <div class="dropdown">
+            <button class="dropbtn">Le Jeu
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">DISCORD</a>
+                <a href="#">Mille&1nuits</a>
+                <a href="#">twitch</a>
+            </div>
+        </div>
+        <a href="echange.html">échange</a>
+    </nav>
+    <div id="container">
+        <h1>Page Cadeau</h1>
+
+        <div class="output" id="codeDisplay"></div>
+        
+        <!-- Bouton pour débloquer les boutons -->
+        <button id="unlockButtonsButton" onclick="unlockButtons()">Débloquer Boutons</button>
+
+        <!-- Boutons "Générer Cadeau" et "Débloquer Cadeau" -->
+        <button class="generateButtonLocked" id="generateCadeauButton" onclick="generateCadeau()" disabled>Générer un Cadeau</button>
+        <button class="unlockButton" onclick="unlockCadeau()">Débloquer Cadeau</button>
+
+        <div class="output" id="generatedIndex"></div>
+
+        <!-- Boutons "Générer Indice" et "Débloquer Indices" -->
+        <button class="generateButtonLocked" id="generateIndiceButton" onclick="generateIndice()" disabled>Générer un Indice</button>
+        <button class="unlockButton" onclick="unlockIndice()">Débloquer Indice</button>
+
+        <!-- Bouton pour réinitialiser (Admin) -->
+        <button class="generateButton" onclick="resetIndices()" id="resetButton" style="display: none;">Réinitialiser (Admin)</button>
+    </div>
+
+<script src="index.js"></script>
+</body>
+
+</html>

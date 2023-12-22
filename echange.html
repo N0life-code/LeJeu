@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="echange.css">
+    <title>Code Exchange</title>
+</head>
+<body>
+    <nav>
+        <a href="lejeu.html" class="logo"><img src="img/mlle1nts.jpg" alt=""></a>
+        <a href="accueil.html">Accueil</a>
+        <a href="boite.html">La Boite</a>
+        <div class="dropdown">
+            <button class="dropbtn">Le Jeu
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">DISCORD</a>
+                <a href="#">Mille&1nuits</a>
+                <a href="#">twitch</a>
+            </div>
+        </div>
+        <a href="echange.html">échange</a>
+    </nav>
+    <div id="exchange-container">
+        <h2>Code Exchange</h2>
+        <p>Entez le code d'échange:</p>
+        <input type="text" id="codeInput" placeholder="Entez le code">
+        <button onclick="exchangeCode()">Exchange</button>
+        <div id="result"></div>
+    </div>
+<script src="echange.js"></script>
+</body>
+</html>
